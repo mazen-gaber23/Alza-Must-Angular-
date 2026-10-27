@@ -1,0 +1,21 @@
+<section>
+    <div class="container text-center">
+      <img class="logo" src="assets/imgs/AM.png" alt="logo">
+      <p class="text-white fs-2">{{"family.instructions"|translate}}</p>
+      <div class="row g-3">
+        @for (member of familyMembers; track $index) {
+             <div class="col-lg-6">
+          <div class="card w-50 m-auto" (click)="showName($index)">
+            <img [src]="member.imgSrc" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" [class.d-block]="member.show" [class.d-none]="!member.show">{{ member.name }}</h5>
+            </div>
+          </div>
+        </div>
+        }
+       
+      </div>
+      <button class="btn btn-light start fs-2 m-5"(click)="restart()">{{"family.restart"|translate}}</button>
+    </div>
+  </section>
+  

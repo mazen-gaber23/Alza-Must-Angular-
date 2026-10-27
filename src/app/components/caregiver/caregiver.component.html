@@ -1,0 +1,59 @@
+<section>
+    <div class="d-flex justify-content-between">
+        <div class="m-2">
+             <button class="btn btn btn-light logout dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ 'caregiver.language' | translate }} 
+             </button>
+        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <li><a (click)="selectLang('en')" class="dropdown-item" routerLink="/caregiver">English</a></li>
+            <li><a (click)="selectLang('ar')" class="dropdown-item" routerLink="/caregiver">عربى</a></li>
+        </ul>
+        </div> 
+       
+        <div class="m-2">
+             <button (click)="logout()" class="btn btn-light logout fs-3  mt-2">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <p>{{ 'caregiver.logout' | translate }}</p>
+             </button>
+    </div>
+       
+    </div>
+    <div class="container text-center">
+        <img class="logo" src="assets/imgs/AM.png" alt="logo">
+        <h2 class="text-white text-center">{{ 'caregiver.caregiver' | translate }}</h2>
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="item m-2">
+                    <a routerLink="/addPatient" class="btn btn-light links fs-2">
+                        <i class="fa-solid fa-people-group"></i>
+                        <p>{{ 'caregiver.add_patient' | translate }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item m-2">
+                    <a routerLink="/tips" class="btn btn-light links fs-2">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <p>{{ 'caregiver.tips' | translate }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item m-2">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScJFGgDA6Nau_k2QXVcPybLLFUALg7wkAEVBKxu0wAaZSuDlA/viewform?usp=sf_link" target="_blank" class="btn btn-light links fs-2">
+                        <i class="fa-solid fa-pencil"></i>
+                        <p>{{ 'caregiver.test' | translate }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item m-2">
+                    <a routerLink="/survey" class="btn btn-light links fs-2">
+                        <i class="fa-solid fa-square-poll-vertical"></i>
+                        <p>{{ 'caregiver.survey' | translate }}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

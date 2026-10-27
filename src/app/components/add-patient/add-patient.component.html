@@ -1,0 +1,26 @@
+<section>
+    <div class="container text-center">
+        <img class="logo" src="assets/imgs/AM.png" alt="logo">
+            <div class="item m-4">
+                <a routerLink="/addFamily" class="btn btn-light links fs-2">
+                    <i class="fa-solid fa-people-group"></i>
+                    <p>{{ 'caregiver.Family_Name' | translate }}</p>
+                </a>
+            </div>
+        
+      
+            <div class="item m-4">
+                <a routerLink="/addHistory" class="btn btn-light links fs-2">
+                    <i class="fa-solid fa-address-card"></i>
+                    <p>{{ 'caregiver.history_details' | translate }}</p>
+                </a>
+            </div>
+           
+                <div class="item m-2">
+                    <a routerLink="/addTask" class="btn btn-light links fs-2">
+                        <i class="fa-solid fa-list-check"></i>
+                        <p>{{ 'caregiver.tasks' | translate }}</p>
+                    </a>
+                </div>
+            </div>
+</section>

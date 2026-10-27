@@ -1,0 +1,38 @@
+<section>
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+      <div class="login w-75 text-center p-3">
+        <img src="assets/imgs/AM.png" alt="logo" />
+        <h2 class="text-white">LOGIN</h2>
+        <form class="sub2" [formGroup]="login" (ngSubmit)="sendData()">
+          <div class="c m-4">
+            <input
+              [ngClass]="{
+                'is-valid': !login.get('email')?.errors && login.get('email')?.dirty,
+                'is-invalid': login.get('email')?.errors && login.get('email')?.dirty
+              }"
+              type="email"class="form-control bg-transparent text-white"aria-describedby="emailHelp"placeholder="Enter your email"formControlName="email" />
+          </div>
+          <app-alert-error [formName]="login" [controlName]="'email'"></app-alert-error>
+  
+          <div class="m-4">
+            <input
+              [ngClass]="{
+                'is-valid': !login.get('password')?.errors && login.get('password')?.dirty,
+                'is-invalid': login.get('password')?.errors && login.get('password')?.dirty
+              }"
+              type="password" class="form-control bg-transparent text-white"  placeholder="Enter your password"formControlName="password"/>
+          </div>
+          <app-alert-error [formName]="login" [controlName]="'password'"></app-alert-error>
+  
+          <div class="m-4">
+            <button type="submit" class="log-in w-100 bg-white">Login</button>
+          </div>
+        </form>
+        <p class="text-white">
+          Don’t have an account?
+          <a routerLink="/signup" class="text-decoration-none text-white"> Sign up</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  

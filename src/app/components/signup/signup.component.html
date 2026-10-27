@@ -1,0 +1,44 @@
+<section>
+    <div class="container d-flex justify-content-center align-items-center mt-5 ">
+        <div class="signup w-75  text-center p-3">
+            <img src="assets/imgs/AM.png" alt="logo" >
+          <h2 class="text-white">SIGN-UP</h2>
+          <form class="sub"[formGroup]="register" (ngSubmit)="sendData()">
+            <div class="c m-4">
+                <input
+                [ngClass]="{
+                    'is-valid':!register.get('name')?.errors&&register.get('name')?.dirty,
+                    'is-invalid':register.get('name')?.errors&&register.get('name')?.dirty,
+                }"
+                 type="text" formControlName="name" class="form-control bg-transparent text-white"  aria-describedby="emailHelp" placeholder="Enter your name">
+                
+            </div>
+            <app-alert-error [formName]="register" controlName="name"/>
+            <div class="c m-4">
+                <input
+                [ngClass]="{
+                    'is-valid':!register.get('email')?.errors&&register.get('email')?.dirty,
+                    'is-invalid':register.get('email')?.errors&&register.get('email')?.dirty,
+                }"
+                 type="email" formControlName="email" class="form-control bg-transparent text-white"  aria-describedby="emailHelp" placeholder="Enter your email">
+            </div>
+            <app-alert-error [formName]="register" controlName="email"/>
+
+            <div class="m-4">
+                <input [ngClass]="{
+                    'is-valid':!register.get('password')?.errors&&register.get('password')?.dirty,
+                    'is-invalid':register.get('password')?.errors&&register.get('password')?.dirty,
+                }"
+                 type="password" formControlName="password" class="form-control bg-transparent text-white"  placeholder="Enter your password">
+              </div>
+              <app-alert-error [formName]="register" controlName="password"/>
+
+              <div class="m-4">
+                  <button type="submit" class="sign-up w-50">Sign up</button>
+              </div>
+          </form>
+          <p class="text-white">You have an account?<a routerLink="/login" class="text-decoration-none text-white">Login</a></p>
+        </div>
+        
+    </div>
+</section>

@@ -1,0 +1,15 @@
+<section>
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+        <div class="add w-75 text-center p-3">
+          <img src="assets/imgs/AM.png" alt="logo" />
+          <form class="sub2"[formGroup]="addTasks"(ngSubmit)="sendData()">
+            <div class="c m-4">
+                <textarea class="form-control"rows="6" placeholder="daily tasks" id="floatingTextarea"></textarea>
+            </div>
+            <div class="m-4">
+                <button type="submit" class="log-in w-100 bg-white">Add</button>
+              </div>
+          </form>
+        </div>
+      </div>
+</section>

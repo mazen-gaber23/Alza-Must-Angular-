@@ -1,0 +1,12 @@
+.form-control:focus{
+    box-shadow: none;
+    border-color:white;
+}
+ textarea::placeholder {
+    color: #ced4da!important;
+  }
+ 
+    textarea {
+       
+        resize: none;
+    }

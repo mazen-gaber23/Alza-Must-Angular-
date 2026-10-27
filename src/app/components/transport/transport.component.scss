@@ -1,0 +1,9 @@
+.item{
+    transition: all 1s;
+}
+.item:hover{
+    transform:scale(1.2,1.2);
+}
+.box{
+    box-shadow: 10px 5px 15px black;
+}

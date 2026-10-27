@@ -1,0 +1,27 @@
+<section>
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+        <div class="add w-75 text-center p-3">
+          <img src="assets/imgs/AM.png" alt="logo" />
+          <form class="sub2" [formGroup]="addFamily"(ngSubmit)="sendData()">
+            <div class="c m-4">
+              <input type="text"class="form-control bg-transparent text-white"placeholder="Father"formControlName="father" />
+            </div>
+            <div class="m-4">
+              <input type="text" class="form-control bg-transparent text-white"  placeholder="Mother"formControlName="mother"/>
+            </div>
+            <div class="m-4">
+                <input type="text" class="form-control bg-transparent text-white"  placeholder="Wife"formControlName="wife"/>
+              </div>
+              <div class="m-4">
+                <input type="text" class="form-control bg-transparent text-white"  placeholder="Grand Son"formControlName="grandSon"/>
+              </div>
+              <div class="m-4">
+                <input type="text" class="form-control bg-transparent text-white"  placeholder="Son"formControlName="son"/>
+              </div>    
+            <div class="m-4">
+              <button type="submit" class="log-in w-100 bg-white">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+</section>

@@ -1,0 +1,22 @@
+@if (formName.get(controlName)?.errors&&formName.get(controlName)?.dirty) {
+    <div class="alert alert-danger m-4">
+   <ul class="m-0">
+       @if (formName.get(controlName)?.getError('required')) {
+           <li>Input is required</li>
+       }
+       @if (formName.get(controlName)?.getError('minlength')) {  
+           <li>Input must be at least 2 characters long</li>
+       }
+       @if (formName.get(controlName)?.getError('maxlength')) {          
+           <li>Input must not exceed 20 characters</li>
+       }
+       @if (formName.get(controlName)?.getError(controlName)) {  
+        <li>please enter valid email address </li>
+    }
+    @if (formName.get(controlName)?.getError('pattern')) {  
+        <li>Password must be at least 6 characters long.</li>
+    }
+   
+   </ul>
+</div>
+}

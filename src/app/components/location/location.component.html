@@ -1,0 +1,10 @@
+<section>
+  <div class="d-flex justify-content-center">
+    <button class="rounded mt-3 location p-4 fs-2" (click)="getUserLocation()">
+      {{ 'location.display_update_location' | translate }}
+    </button>
+  </div>
+  <div class="container mt-3">
+    <iframe [src]="iframeSrc" id="locationIframe" class="w-100" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</section>

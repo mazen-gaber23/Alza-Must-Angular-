@@ -1,0 +1,101 @@
+<section>
+    <div class="d-flex justify-content-between">
+        <div class="m-2">
+             <button class="btn btn btn-light logout dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ 'home.language' | translate }} 
+             </button>
+        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <li><a (click)="selectLang('en')" class="dropdown-item" routerLink="/home">English</a></li>
+            <li><a (click)="selectLang('ar')" class="dropdown-item" routerLink="/home">عربى</a></li>
+        </ul>
+        </div> 
+       
+        <div class="m-2">
+             <button (click)="logout()" class="btn btn-light logout fs-3  mt-2">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <p>{{ 'home.logout' | translate }}</p>
+             </button>
+    </div>
+       
+    </div>
+   
+    <div class="container text-center">
+        <img class="logo" src="assets/imgs/AM.png" alt="logo">
+        <h2 class="text-white text-center">{{ 'home.welcome' | translate }}</h2>
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="item m-2">
+                    <a routerLink="/family" class="btn btn-light links fs-2">
+                        <i class="fa-solid fa-people-group"></i>
+                        <p>{{ 'home.family' | translate }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item m-2">
+                    <a routerLink="/task" class="btn btn-light links fs-2">
+                        <i class="fa-solid fa-list-check"></i>
+                        <p>{{ 'home.tasks' | translate }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item m-2">
+                    <a routerLink="/history" class="btn btn-light links fs-2">
+                        <i class="fa-solid fa-address-card"></i>
+                        <p>{{ 'home.history' | translate }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item m-2">
+                    <a routerLink="/tips" class="btn btn-light links fs-2">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <p>{{ 'home.tips' | translate }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item m-2">
+                    <a routerLink="/selectFamilyGames" class="btn btn-light links fs-2">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <p>{{ 'home.games' | translate }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item m-2">
+                    <a routerLink="/notes" class="btn btn-light links fs-2">
+                        <i class="fa-solid fa-note-sticky"></i>
+                        <p>{{ 'home.notes' | translate }}</p>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="item">
+                    <a routerLink="/location" class="btn btn-light links fs-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>{{ 'home.location' | translate }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item">
+                    <a routerLink="/transport" class="btn btn-light links fs-2">
+                        <i class="fa-solid fa-car"></i>
+                        <p>{{ 'home.transport' | translate }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 m-auto mt-5">
+                <div class="item">
+                    <a routerLink="/social" class="btn btn-light links fs-2">
+                        <i class="fa-solid fa-users"></i>
+                        <p>{{ 'home.social' | translate }}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

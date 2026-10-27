@@ -1,0 +1,30 @@
+<section>
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+        <div class="add w-75 text-center p-3">
+          <img src="assets/imgs/AM.png" alt="logo" />
+          <form class="sub2"[formGroup]="addHistory"(ngSubmit)="sendData()">
+            <div class="c m-4">
+              <input type="text"class="form-control bg-transparent text-white"placeholder="Name"formControlName="name" />
+            </div>
+            <div class="m-4">
+              <input type="date" class="form-control bg-transparent text-white"  placeholder="data of birth"formControlName="dob"/>
+            </div>
+            <div class="m-4">
+                <input type="text" class="form-control bg-transparent text-white"  placeholder="place of birth"formControlName="pob"/>
+              </div>
+              <div class="m-4">
+                <input type="text" class="form-control bg-transparent text-white"  placeholder="job"formControlName="job"/>
+              </div>
+              <div class="m-4">
+                <input type="text" class="form-control bg-transparent text-white"  placeholder="Significant Life Events"formControlName="Significance"/>
+              </div>
+              <div class="m-4">
+                <input type="number" class="form-control bg-transparent text-white"  placeholder="caregiver phone number"formControlName="care_giver_number"/>
+              </div> 
+            <div class="m-4">
+              <button type="submit" class="log-in w-100 bg-white">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+</section>

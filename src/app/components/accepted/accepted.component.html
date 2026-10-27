@@ -1,0 +1,41 @@
+<section>
+    <div class="container d-flex justify-content-center align-items-center m-5">
+      <div class="login w-75 text-center p-3">
+        <img src="assets/imgs/AM.png" alt="logo" />
+  
+        <form (ngSubmit)="acceptCookies()">
+          <div class="form-check text-white">
+            <input
+              class="form-check-input fs-3 ms-3"
+              type="checkbox"
+              [(ngModel)]="policyAccepted"
+              name="policy"
+              id="policy"
+            />
+            <label class="form-check-label fs-3" for="policy">
+              I accept the privacy policy
+            </label>
+          </div>
+          <div class="form-check text-white">
+            <input
+              class="form-check-input fs-3 ms-3"
+              type="checkbox"
+              [(ngModel)]="cookiesAccepted"
+              name="cookies"
+              id="cookies"
+            />
+            <label class="form-check-label fs-3" for="cookies">
+              I accept the use of cookies
+            </label>
+          </div>
+          <div class="m-4">
+            <button type="submit" class="accept w-100 bg-white">
+              Accept
+            </button>
+          </div>
+        </form>
+        <div id="demo2"></div>
+      </div>
+    </div>
+  </section>
+  
