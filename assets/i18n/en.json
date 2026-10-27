@@ -1,0 +1,74 @@
+{
+    "home":{
+        "welcome":"Welcome Samy",
+        "family":"Family",
+        "tasks":"Daily tasks",
+        "history":"History",
+        "tips":"General tips",
+        "games":"Games",
+        "notes":"Notes",
+        "test":"Test your self",
+        "survey":"Survey",
+        "location":"Live location",
+        "transport":"Transports apps",
+        "social":"Social Media",
+        "logout":"Logout",
+        "language": "Language"
+    },
+   "family": {
+    "father": "Father: Ali",
+    "mother": "Mother: Magda",
+    "wife": "Wife: Salwa",
+    "son": "Son: Hussein",
+    "daughter_in_law": "My son's wife:Rawan",
+    "grandson": "Grandson: Ahmed",
+    "instructions":"Guess the member before clicking on the image",
+    "restart":"Restart"
+
+
+  },
+    "profile": {
+      "name": "Name",
+      "full_name": "Sami Ali Hussein",
+      "birth_date_label": "Date of Birth",
+      "birth_date": "12/12/1947",
+      "birth_place_label": "Place of Birth",
+      "birth_place": "Giza",
+      "job_label": "Occupation",
+      "job": "Cardiologist",
+      "life_events_label": "Significant Life Events",
+      "life_events": "Participated in the October War with the Egyptian Army",
+      "phone_label": "Phone Number",
+      "phone": "012345678910"
+    },
+    "location":{
+        "display_update_location": "Display and Update Location"
+      },
+      "selectGame":{
+        "familyGame":"Family Game",
+        "comingSoon":"other Games coming soon"
+      },
+      "task":{
+        "task1":"Take the medication at 12:00 AM.",
+        "task2":"You must meet your friend at 7:00 PM."
+      },
+      "tips":{
+        "head":"Caring for an Alzheimer’s patient can be challenging and requires patience, understanding, and organization. Here are some specific tips to help caregivers manage their responsibilities effectively:",
+        "1":"1. *Establish a Routine:* - Create a daily schedule that includes regular times for meals, activities, and rest. - Consistency helps reduce anxiety and confusion.",
+        "2":"2. *Simplify Tasks:* - Break tasks into simple, manageable steps. - Provide clear, one-step instructions.",
+        "3":"3. *Create a Safe Environment:* - Remove tripping hazards like rugs and electrical cords.- Install locks on cabinets with dangerous items.- Use nightlights to prevent falls.",
+        "4":"4. *Maintain Communication:* - Speak slowly and clearly. - Use simple words and sentences.- Be patient and give them time to respond.",
+        "5":"5. *Promote Physical Health:* - Encourage regular exercise suited to their abilities. - Provide a balanced diet and ensure they stay hydrated.- Schedule regular medical check-ups.",
+        "6":"6. *Engage in Activities:* - Encourage activities they enjoy and can do safely. - Use music, art, and simple games to stimulate their mind.",
+        "7":"7. *Manage Behavioral Changes:* - Stay calm and don’t take their behavior personally. - Redirect their attention if they become agitated.- Keep a record of what triggers behavioral changes to avoid them in the future.",
+        "8":"8. *Provide Emotional Support:* - Show affection and offer reassurance. - Engage in conversation, even if they have difficulty responding.- Be patient and compassionate.",
+        "9":"9. *Take Care of Yourself:* - Seek support from family, friends, or support groups. - Take breaks and don’t hesitate to ask for help. - Ensure you have time for your own health and well-being.",
+        "10":"10. *Stay Informed:* - Keep up with the latest information on Alzheimer’s disease. - Consider training programs or workshops for caregivers."
+      },
+      "footer":{
+        "end":"2024 ALZA-MUST. All rights reserved."
+      }
+      
+  
+  
+}
